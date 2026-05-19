@@ -146,7 +146,7 @@ function renderStartScreen() {
         resumeBannerHtml = `
             <div class="resume-banner">
                 <div class="resume-banner-text">
-                    <strong>📋 Progres tersimpan ditemukan</strong><br>
+                    <strong>Progres tersimpan ditemukan</strong><br>
                     Anda sudah menyelesaikan ${completed} dari ${KASUS.length} kasus. Lanjutkan dari kasus ${saved.currentStep}?
                 </div>
                 <div class="resume-banner-actions">
@@ -189,7 +189,7 @@ function renderStartScreen() {
             </div>
 
             <div class="consent-box">
-                <h3>📄 Persetujuan Partisipasi (Informed Consent)</h3>
+                <h3>Persetujuan Partisipasi (Informed Consent)</h3>
                 <p>Dengan berpartisipasi dalam evaluasi ini, Anda memahami bahwa:</p>
                 <ul>
                     <li>Data yang dikumpulkan (nama, institusi, profesi, dan palet warna) akan digunakan <strong>khusus untuk keperluan penelitian skripsi</strong>.</li>
@@ -200,7 +200,7 @@ function renderStartScreen() {
             </div>
 
             <div class="info-box" style="margin-bottom: 2rem;">
-                <div class="info-box-title">📌 Cara Pengumpulan Data</div>
+                <div class="info-box-title">Cara Pengumpulan Data</div>
                 <p>
                     Setelah menyelesaikan 18 kasus, Anda akan diminta <strong>mengunduh file JSON</strong> berisi jawaban Anda, lalu mengirimkannya ke peneliti via email atau WhatsApp. Petunjuk lengkap akan ditampilkan di akhir evaluasi.
                 </p>
