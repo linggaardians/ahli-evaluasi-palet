@@ -363,15 +363,42 @@ function renderSurveyScreen() {
         wrapper.className = 'color-swatch-wrapper';
         wrapper.innerHTML = `
             <input type="color" class="color-picker" id="color-${i}" value="${colorValue}">
-            <span class="color-hex" id="hex-${i}">${colorValue.toUpperCase()}</span>
+            <input type="text" class="color-hex-input" id="hex-${i}" value="${colorValue.toUpperCase()}" maxlength="7" spellcheck="false">
         `;
         paletteContainer.appendChild(wrapper);
 
         const picker = document.getElementById(`color-${i}`);
-        const hexDisplay = document.getElementById(`hex-${i}`);
+        const hexInput = document.getElementById(`hex-${i}`);
 
         picker.addEventListener('input', (e) => {
-            hexDisplay.textContent = e.target.value.toUpperCase();
+            hexInput.value = e.target.value.toUpperCase();
+        });
+
+        hexInput.addEventListener('input', (e) => {
+            let val = e.target.value;
+            if (!val.startsWith('#')) {
+                val = '#' + val.replace(/[^0-9A-Fa-f]/g, '');
+                e.target.value = val;
+            } else {
+                val = '#' + val.substring(1).replace(/[^0-9A-Fa-f]/g, '');
+                e.target.value = val;
+            }
+            if (/^#([0-9A-F]{3}){1,2}$/i.test(val)) {
+                picker.value = val;
+            }
+        });
+
+        hexInput.addEventListener('blur', (e) => {
+            let val = e.target.value;
+            if (/^#([0-9A-F]{3}){1,2}$/i.test(val)) {
+                if (val.length === 4) {
+                    val = '#' + val[1] + val[1] + val[2] + val[2] + val[3] + val[3];
+                }
+                hexInput.value = val.toUpperCase();
+                picker.value = val;
+            } else {
+                hexInput.value = picker.value.toUpperCase();
+            }
         });
     }
 
