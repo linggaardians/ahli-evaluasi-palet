@@ -15,29 +15,21 @@ const STORAGE_KEY = 'colorPaletteEvaluation_v1';
 // ===== DATA KASUS =====
 const KASUS = [
     // KESEHATAN
-    {'id': 1,  'kat': 'Kesehatan', 'teks_en': 'a calm and professional health app design', 'teks_id': 'desain aplikasi kesehatan yang tenang dan profesional'},
-    {'id': 2,  'kat': 'Kesehatan', 'teks_en': 'a clean and trustworthy medical interface', 'teks_id': 'antarmuka medis yang bersih dan terpercaya'},
-    {'id': 3,  'kat': 'Kesehatan', 'teks_en': 'a soft and soothing wellness clinic branding', 'teks_id': 'identitas merek klinik kebugaran (wellness) yang lembut dan menenangkan'},
-    // FASHION
-    {'id': 4,  'kat': 'Fashion',   'teks_en': 'an elegant and luxurious fashion e-commerce interface', 'teks_id': 'antarmuka e-commerce fashion yang elegan dan mewah'},
-    {'id': 5,  'kat': 'Fashion',   'teks_en': 'a bold and modern high-end fashion brand identity', 'teks_id': 'identitas merek fashion kelas atas yang berani dan modern'},
-    {'id': 6,  'kat': 'Fashion',   'teks_en': 'a minimal and sophisticated clothing store design', 'teks_id': 'desain toko pakaian yang minimalis dan canggih'},
+    {'id': 1,  'kat': 'Kesehatan', 'teks_en': 'calm relaxing and peaceful interface for mental wellness', 'teks_id': 'antarmuka yang tenang, santai, dan damai untuk kesehatan mental'},
+    {'id': 2,  'kat': 'Kesehatan', 'teks_en': 'clean professional and trustworthy healthcare platform', 'teks_id': 'platform layanan kesehatan yang bersih, profesional, dan terpercaya'},
+    {'id': 3,  'kat': 'Kesehatan', 'teks_en': 'soft warm and comforting design for baby care services', 'teks_id': 'desain yang lembut, hangat, dan menenangkan untuk layanan perawatan bayi'},
     // EDUKASI
-    {'id': 7,  'kat': 'Edukasi',   'teks_en': 'a cheerful yet soft educational app for children', 'teks_id': 'aplikasi pendidikan untuk anak-anak yang ceria namun lembut'},
-    {'id': 8,  'kat': 'Edukasi',   'teks_en': 'a friendly and playful learning platform for kids', 'teks_id': 'platform pembelajaran yang ramah dan menyenangkan untuk anak-anak'},
-    {'id': 9,  'kat': 'Edukasi',   'teks_en': 'a bright and engaging interactive school interface', 'teks_id': 'antarmuka sekolah interaktif yang cerah dan menarik'},
-    // OLAHRAGA
-    {'id': 10, 'kat': 'Olahraga',  'teks_en': 'bold energetic and dynamic sports branding', 'teks_id': 'identitas merek olahraga yang berani, energik, dan dinamis'},
-    {'id': 11, 'kat': 'Olahraga',  'teks_en': 'a powerful and intense fitness app design', 'teks_id': 'desain aplikasi kebugaran yang kuat dan intens'},
-    {'id': 12, 'kat': 'Olahraga',  'teks_en': 'an aggressive and motivating athletic brand identity', 'teks_id': 'identitas merek atletik yang agresif dan memotivasi'},
+    {'id': 4,  'kat': 'Edukasi',   'teks_en': 'bright playful and engaging learning application for children', 'teks_id': 'aplikasi pembelajaran yang cerah, ceria, dan menarik untuk anak-anak'},
+    {'id': 5,  'kat': 'Edukasi',   'teks_en': 'creative vibrant and energetic educational event poster', 'teks_id': 'poster acara pendidikan yang kreatif, cerah, dan energik'},
+    {'id': 6,  'kat': 'Edukasi',   'teks_en': 'a convenient, smart, and academic website for learning', 'teks_id': 'situs web akademik yang nyaman, pintar, dan terpelajar untuk pembelajaran'},
     // FINANSIAL
-    {'id': 13, 'kat': 'Finansial', 'teks_en': 'a trustworthy and stable financial application', 'teks_id': 'aplikasi finansial yang terpercaya dan stabil'},
-    {'id': 14, 'kat': 'Finansial', 'teks_en': 'a professional and secure banking interface design', 'teks_id': 'desain antarmuka perbankan yang profesional dan aman'},
-    {'id': 15, 'kat': 'Finansial', 'teks_en': 'a clean and reliable investment platform branding', 'teks_id': 'identitas merek platform investasi yang bersih dan dapat diandalkan'},
-    // GAMING
-    {'id': 16, 'kat': 'Gaming',    'teks_en': 'nostalgic pixel retro colorful game design', 'teks_id': 'desain game piksel retro yang bernuansa nostalgia dan penuh warna'},
-    {'id': 17, 'kat': 'Gaming',    'teks_en': 'a vibrant and neon-lit futuristic game interface', 'teks_id': 'antarmuka game futuristik yang hidup dan bercahaya neon'},
-    {'id': 18, 'kat': 'Gaming',    'teks_en': 'a dark and immersive action game visual identity', 'teks_id': 'identitas visual game aksi yang gelap dan mendalam'},
+    {'id': 7,  'kat': 'Finansial', 'teks_en': 'minimal modern and trustworthy personal finance application', 'teks_id': 'aplikasi keuangan pribadi yang minimalis, modern, dan terpercaya'},
+    {'id': 8,  'kat': 'Finansial', 'teks_en': 'stable secure and professional banking service platform', 'teks_id': 'platform layanan perbankan yang stabil, aman, dan profesional'},
+    {'id': 9,  'kat': 'Finansial', 'teks_en': 'luxurious elegant and sophisticated investment company brand', 'teks_id': 'identitas merek perusahaan investasi yang mewah, elegan, dan mutakhir'},
+    // KULINER
+    {'id': 10, 'kat': 'Kuliner',   'teks_en': 'warm rich and earthy restaurant branding', 'teks_id': 'identitas merek restoran yang bernuansa hangat, kaya, dan membumi'},
+    {'id': 11, 'kat': 'Kuliner',   'teks_en': 'fresh, clean and comfortable flower shop application.', 'teks_id': 'aplikasi toko bunga yang segar, bersih, dan nyaman'},
+    {'id': 12, 'kat': 'Kuliner',   'teks_en': 'old spicy and energetic food product branding', 'teks_id': 'identitas merek produk makanan yang bernuansa tua, pedas, dan energik'},
 ];
 
 // ===== STATE =====
@@ -48,7 +40,6 @@ let state = {
         name: '',
         institution: '',
         profession: '',
-        professionOther: '',
         experience: '',
         email: ''
     },
@@ -146,7 +137,7 @@ function renderStartScreen() {
         resumeBannerHtml = `
             <div class="resume-banner">
                 <div class="resume-banner-text">
-                    <strong>Progres tersimpan ditemukan</strong><br>
+                    <strong>📋 Progres tersimpan ditemukan</strong><br>
                     Anda sudah menyelesaikan ${completed} dari ${KASUS.length} kasus. Lanjutkan dari kasus ${saved.currentStep}?
                 </div>
                 <div class="resume-banner-actions">
@@ -175,7 +166,7 @@ function renderStartScreen() {
 
             <div class="stats-row">
                 <div class="stat-item">
-                    <span class="stat-number">18</span>
+                    <span class="stat-number">12</span>
                     <span class="stat-label">Deskripsi Teks</span>
                 </div>
                 <div class="stat-item">
@@ -189,7 +180,7 @@ function renderStartScreen() {
             </div>
 
             <div class="consent-box">
-                <h3>Persetujuan Partisipasi (Informed Consent)</h3>
+                <h3>📄 Persetujuan Partisipasi (Informed Consent)</h3>
                 <p>Dengan berpartisipasi dalam evaluasi ini, Anda memahami bahwa:</p>
                 <ul>
                     <li>Data yang dikumpulkan (nama, institusi, profesi, dan palet warna) akan digunakan <strong>khusus untuk keperluan penelitian skripsi</strong>.</li>
@@ -200,7 +191,7 @@ function renderStartScreen() {
             </div>
 
             <div class="info-box" style="margin-bottom: 2rem;">
-                <div class="info-box-title">Cara Pengumpulan Data</div>
+                <div class="info-box-title">📌 Cara Pengumpulan Data</div>
                 <p>
                     Setelah menyelesaikan 18 kasus, Anda akan diminta <strong>mengunduh file JSON</strong> berisi jawaban Anda, lalu mengirimkannya ke peneliti via email atau WhatsApp. Petunjuk lengkap akan ditampilkan di akhir evaluasi.
                 </p>
@@ -224,13 +215,8 @@ function renderStartScreen() {
                 </div>
 
                 <div class="form-group" style="margin-top: 1rem;">
-                    <label class="radio-group-label">Bidang Keahlian <span class="required">*</span></label>
-                    <div class="radio-list">
-                        ${renderProfessionRadios()}
-                    </div>
-                    <div class="form-group" id="profession-other-container" style="display: ${state.expertInfo.profession === 'Lainnya' ? 'block' : 'none'}; margin-top: 0.5rem;">
-                        <input type="text" id="profession-other" placeholder="Sebutkan bidang keahlian Anda" value="${escapeHtml(state.expertInfo.professionOther)}">
-                    </div>
+                    <label for="profession">Bidang Keahlian <span class="required">*</span></label>
+                    <input type="text" id="profession" placeholder="Sebutkan bidang keahlian Anda (contoh: Desainer Grafis)" required value="${escapeHtml(state.expertInfo.profession)}">
                 </div>
 
                 <div class="form-group">
@@ -266,7 +252,7 @@ function renderStartScreen() {
             if (confirm('Yakin ingin memulai ulang? Semua progres akan terhapus.')) {
                 clearState();
                 state = {
-                    expertInfo: { name: '', institution: '', profession: '', professionOther: '', experience: '', email: '' },
+                    expertInfo: { name: '', institution: '', profession: '', experience: '', email: '' },
                     consentGiven: false,
                     currentStep: 0,
                     responses: [],
@@ -278,13 +264,7 @@ function renderStartScreen() {
         });
     }
 
-    // Profession radio: tampilkan input "Lainnya" jika dipilih
-    document.querySelectorAll('input[name="profession"]').forEach(radio => {
-        radio.addEventListener('change', (e) => {
-            const otherContainer = document.getElementById('profession-other-container');
-            otherContainer.style.display = e.target.value === 'Lainnya' ? 'block' : 'none';
-        });
-    });
+    // Profession text input handled directly from id="profession"
 
     // Submit handler
     document.getElementById('start-form').addEventListener('submit', (e) => {
@@ -295,15 +275,15 @@ function renderStartScreen() {
         const email = document.getElementById('email').value.trim();
         const consentCheckbox = document.getElementById('consent-checkbox');
 
-        const professionRadio = document.querySelector('input[name="profession"]:checked');
+        const profession = document.getElementById('profession').value.trim();
         const expRadio = document.querySelector('input[name="experience"]:checked');
 
         if (!name || !institution) {
             showToast('Mohon lengkapi nama dan institusi.', 'warning');
             return;
         }
-        if (!professionRadio) {
-            showToast('Mohon pilih bidang keahlian.', 'warning');
+        if (!profession) {
+            showToast('Mohon isi bidang keahlian.', 'warning');
             return;
         }
         if (!expRadio) {
@@ -318,10 +298,7 @@ function renderStartScreen() {
         state.expertInfo.name = name;
         state.expertInfo.institution = institution;
         state.expertInfo.email = email;
-        state.expertInfo.profession = professionRadio.value;
-        state.expertInfo.professionOther = professionRadio.value === 'Lainnya'
-            ? document.getElementById('profession-other').value.trim()
-            : '';
+        state.expertInfo.profession = profession;
         state.expertInfo.experience = expRadio.value;
         state.consentGiven = true;
         state.startedAt = new Date().toISOString();
@@ -332,19 +309,8 @@ function renderStartScreen() {
     });
 }
 
-function renderProfessionRadios() {
-    const options = ['Desainer Grafis', 'Web Designer', 'Ilustrator / Seniman Digital', 'Seniman / Pelukis', 'Interior Designer', 'Lainnya'];
-    return options.map(opt => `
-        <label class="radio-option">
-            <input type="radio" name="profession" value="${opt}" ${state.expertInfo.profession === opt ? 'checked' : ''}>
-            <div class="radio-circle"></div>
-            <span class="radio-label-text">${opt}</span>
-        </label>
-    `).join('');
-}
-
 function renderExperienceRadios() {
-    const options = ['Kurang dari 1 tahun', '1-3 tahun', '3-5 tahun', 'Lebih dari 5 tahun'];
+    const options = ['1 tahun', '2 tahun', '3 tahun', '4 tahun', '5 tahun', '5+ tahun'];
     return options.map(opt => `
         <label class="radio-option">
             <input type="radio" name="experience" value="${opt}" ${state.expertInfo.experience === opt ? 'checked' : ''}>
@@ -482,7 +448,7 @@ function renderFinishScreen() {
             <p class="subtitle">Terima kasih, <strong style="color: #86efac;">${escapeHtml(state.expertInfo.name)}</strong>, atas waktu dan keahlian yang Anda luangkan.</p>
 
             <div class="steps-box">
-                <div class="steps-title">📋 Langkah Pengiriman Data</div>
+                <div class="steps-title">Langkah Pengiriman Data</div>
                 <div class="step-item">
                     <div class="step-number" id="step-1-num">1</div>
                     <div class="step-content">
@@ -499,18 +465,18 @@ function renderFinishScreen() {
                 </div>
             </div>
 
-            <button id="download-json-btn" class="btn">📥 Unduh File JSON</button>
+            <button id="download-json-btn" class="btn">Unduh File JSON</button>
 
             <div class="info-box" style="margin-top: 2rem;">
-                <div class="info-box-title">📬 Kirimkan file JSON ke:</div>
+                <div class="info-box-title">Kirimkan file JSON ke:</div>
                 <div class="contact-row">
-                    <div class="contact-label">📧 Email</div>
+                    <div class="contact-label">Email</div>
                     <div class="contact-value">
                         <a href="${mailtoLink}" class="contact-link">${RESEARCHER_EMAIL}</a>
                     </div>
                 </div>
                 <div class="contact-row">
-                    <div class="contact-label">💬 WhatsApp</div>
+                    <div class="contact-label">WhatsApp</div>
                     <div class="contact-value">
                         <a href="${waLink}" target="_blank" rel="noopener" class="contact-link">${RESEARCHER_WHATSAPP}</a>
                     </div>
